@@ -1,9 +1,10 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
+{% assign post = page %}
+<article class="post">
+  <h1>{{ post.title }}</h1>
   {{ content }}
-</div>
+  <div class="date">~ {{post.date | date_to_string }}</div>
+</article>

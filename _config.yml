@@ -1,2 +1,4 @@
 name: "My PK Thing"
-markdown: kramdown
+base: /
+permalink: /:title/
+encoding: utf-8

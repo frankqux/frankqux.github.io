@@ -1,8 +1,10 @@
 ---
 layout: default
-title: Hank Quinlan, Horrible Cop
+title: "My PK Thing"
+index: 1
 ---
-<div class="blurb">
-	<h1>Hi there, I'm Frank</h1>
-	<p>I'm best known as... actually I'm not known at all. <a href="/about">Read more about me.</a></p>
-</div><!-- /.blurb -->
+<ul class="index">
+  {% for post in site.posts %}
+  <li data-date="{{post.date | date_to_string }}"{% if post.fav %} class="fav"{% endif %}><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>

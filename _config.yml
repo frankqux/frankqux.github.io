@@ -1,4 +1,6 @@
-name: "My PK Thing"
+name: "My Sysadmin Cheatsheet"
 base: /
 permalink: /:title/
 encoding: utf-8
+sass:
+  style: compressed

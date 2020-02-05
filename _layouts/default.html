@@ -1,8 +1,11 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/main.scss">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/main.css?{{ site.time | date: '%s'}}">
   </head>
 
   <body>
@@ -13,10 +16,10 @@
 
       <div class="content">
         {{ content }}
-        <div class="xkcd">&laquo;Who were you, DenverCoder9? &mdash; What did you see?!&raquo; (<a href="https://xkcd.com/979/">xkcd/979</a>)</div>
+        <div class="xkcd"><code>div class xkcd</code></div>
       </div>
 
-      <footer>&hearts; <a href="https://github.com/j7k6">2013–{{ 'now' | date: "%Y" }}</a></footer>
+      <footer><code>footer</code></footer>
     </div>
     <script src="/assets/js/jquery-3.3.1.slim.min.js"></script>
     <script src="/assets/js/main.js"></script>
